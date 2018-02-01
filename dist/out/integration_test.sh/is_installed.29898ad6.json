@@ -1,21 +1,21 @@
 var data = {lines:[
 {"lineNum":"    1","line":"#!/bin/bash"},
-{"lineNum":"    2","line":". \"${STFW_HOME}/bin/lib/setenv\"","class":"lineCov","hits":"1","order":"410","possible_hits":"0",},
+{"lineNum":"    2","line":". \"${STFW_HOME}/bin/lib/setenv\"","class":"lineCov","hits":"2","order":"465","possible_hits":"0",},
 {"lineNum":"    3","line":""},
 {"lineNum":"    4","line":"function is_installed_cmd() {"},
-{"lineNum":"    5","line":"  local _target_cmd=\"$1\"","class":"lineCov","hits":"2","order":"412","possible_hits":"0",},
-{"lineNum":"    6","line":"  if [[ \"$(which ${_target_cmd})x\" = \"x\" ]]; then","class":"lineCov","hits":"4","order":"413","possible_hits":"0",},
+{"lineNum":"    5","line":"  local _target_cmd=\"$1\"","class":"lineCov","hits":"4","order":"467","possible_hits":"0",},
+{"lineNum":"    6","line":"  if [[ \"$(which ${_target_cmd})x\" = \"x\" ]]; then","class":"lineCov","hits":"8","order":"468","possible_hits":"0",},
 {"lineNum":"    7","line":"    echo \"${_target_cmd} is not installed.\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
 {"lineNum":"    8","line":"    exit 1","class":"lineNoCov","hits":"0","possible_hits":"0",},
 {"lineNum":"    9","line":"  fi"},
 {"lineNum":"   10","line":"}"},
 {"lineNum":"   11","line":""},
-{"lineNum":"   12","line":"is_installed_cmd \"find\"","class":"lineCov","hits":"1","order":"411","possible_hits":"0",},
-{"lineNum":"   13","line":"is_installed_cmd \"sed\"","class":"lineCov","hits":"1","order":"414","possible_hits":"0",},
+{"lineNum":"   12","line":"is_installed_cmd \"find\"","class":"lineCov","hits":"2","order":"466","possible_hits":"0",},
+{"lineNum":"   13","line":"is_installed_cmd \"sed\"","class":"lineCov","hits":"2","order":"469","possible_hits":"0",},
 {"lineNum":"   14","line":""},
-{"lineNum":"   15","line":"echo \"true\"","class":"lineCov","hits":"1","order":"415","possible_hits":"0",},
-{"lineNum":"   16","line":"exit 0","class":"lineCov","hits":"1","order":"416","possible_hits":"0",},
+{"lineNum":"   15","line":"echo \"true\"","class":"lineCov","hits":"2","order":"470","possible_hits":"0",},
+{"lineNum":"   16","line":"exit 0","class":"lineCov","hits":"2","order":"471","possible_hits":"0",},
 ]};
 var percent_low = 25;var percent_high = 75;
-var header = { "command" : "integration_test.sh", "date" : "2018-02-01 17:02:22", "instrumented" : 9, "covered" : 7,};
+var header = { "command" : "integration_test.sh", "date" : "2018-02-01 18:54:43", "instrumented" : 9, "covered" : 7,};
 var merged_data = [];

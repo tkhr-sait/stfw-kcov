@@ -1,0 +1,21 @@
+var data = {lines:[
+{"lineNum":"    1","line":"#!/bin/bash"},
+{"lineNum":"    2","line":". \"${STFW_HOME}/bin/lib/setenv\"","class":"lineCov","hits":"2","order":"457","possible_hits":"0",},
+{"lineNum":"    3","line":""},
+{"lineNum":"    4","line":"function is_installed_cmd() {"},
+{"lineNum":"    5","line":"  local _target_cmd=\"$1\"","class":"lineCov","hits":"4","order":"459","possible_hits":"0",},
+{"lineNum":"    6","line":"  if [[ \"$(which ${_target_cmd})x\" = \"x\" ]]; then","class":"lineCov","hits":"8","order":"460","possible_hits":"0",},
+{"lineNum":"    7","line":"    echo \"${_target_cmd} is not installed.\"","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    8","line":"    exit 1","class":"lineNoCov","hits":"0","possible_hits":"0",},
+{"lineNum":"    9","line":"  fi"},
+{"lineNum":"   10","line":"}"},
+{"lineNum":"   11","line":""},
+{"lineNum":"   12","line":"is_installed_cmd \"find\"","class":"lineCov","hits":"2","order":"458","possible_hits":"0",},
+{"lineNum":"   13","line":"is_installed_cmd \"sed\"","class":"lineCov","hits":"2","order":"461","possible_hits":"0",},
+{"lineNum":"   14","line":""},
+{"lineNum":"   15","line":"echo \"true\"","class":"lineCov","hits":"2","order":"462","possible_hits":"0",},
+{"lineNum":"   16","line":"exit 0","class":"lineCov","hits":"2","order":"463","possible_hits":"0",},
+]};
+var percent_low = 25;var percent_high = 75;
+var header = { "command" : "integration_test.sh", "date" : "2018-02-01 19:13:29", "instrumented" : 9, "covered" : 7,};
+var merged_data = [];
