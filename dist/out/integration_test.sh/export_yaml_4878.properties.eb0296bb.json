@@ -1,6 +1,0 @@
-var data = {lines:[
-{"lineNum":"    1","line":"export stfw_process_scripts_some_key=\"value\"","class":"lineCov","hits":"4","order":"1082","possible_hits":"0",},
-]};
-var percent_low = 25;var percent_high = 75;
-var header = { "command" : "integration_test.sh", "date" : "2018-02-01 17:02:22", "instrumented" : 1, "covered" : 1,};
-var merged_data = [];

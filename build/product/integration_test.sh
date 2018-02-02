@@ -14,6 +14,8 @@ cd "$(cd ${dir_script}; cd ../..; pwd)" || exit 1
 readonly DIR_BASE="$(pwd)"
 . "${DIR_BASE}/build/env.properties"
 
+#shunit2
+"${DIR_BASE}/build/product/equality_test.sh"
 
 #---------------------------------------------------------------------------------------------------
 # check
@@ -192,6 +194,11 @@ echo "  ${STEP}"
 stfw server start
 retcode=$?
 if [[ ${retcode} -ne 0 ]]; then echo "    error occurred in ${STEP} step." >&2; exit 1; fi
+
+# TODO get digdag pid
+# javaプロセスに対するkcovは無理だった
+#PID=$(ps -fe | grep dig | grep -v grep | head -n 1 | awk '{print $2}')
+#kcov --pid ${PID} /source/dist/out2 
 
 stfw server status
 retcode=$?

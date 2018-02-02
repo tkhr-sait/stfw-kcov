@@ -7,4 +7,5 @@ services:
     volumes:
       - ./:/source
       - ./dist/tmp:/tmp
+    #command: --include-pattern /source/build/product/equality /source/dist/out /source/build/product/equality_test.sh
     command: /source/dist/out /source/build/product/integration_test.sh /source/dist/stfw-with-depends-0.2.0-SNAPSHOT.tar.gz
